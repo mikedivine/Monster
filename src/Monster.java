@@ -2,19 +2,19 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public abstract class Monster {
-  private int hp;
-  private int xp;
-  private int maxHP;
+  private Integer hp;
+  private Integer xp = 10;
+  private Integer maxHP;
   private HashMap<String,Integer> items;
 
-  public Monster(int hp, int xp, int maxHP, HashMap<String, Integer> items) {
-    this.hp = hp;
-    this.xp = xp;
+  public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
     this.maxHP = maxHP;
+    hp = this.maxHP;
+    this.xp = xp;
     this.items = items;
   }
 
-  public int getHp() {
+  public Integer getHp() {
     return hp;
   }
 
@@ -22,11 +22,11 @@ public abstract class Monster {
     this.hp = hp;
   }
 
-  public int getXp() {
+  public Integer getXp() {
     return xp;
   }
 
-  public int getMaxHP() {
+  public Integer getMaxHP() {
     return maxHP;
   }
 
@@ -53,11 +53,6 @@ public abstract class Monster {
 
   @Override
   public String toString() {
-    return "Monster{" +
-      "hp=" + hp +
-      ", xp=" + xp +
-      ", maxHP=" + maxHP +
-      ", items=" + items +
-      '}';
+    return "hp=" + hp + "/" + maxHP;
   }
 }
