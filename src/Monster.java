@@ -1,6 +1,13 @@
 import java.util.HashMap;
 import java.util.Objects;
 
+/**
+ * Title: Monster
+ * Abstract: Purpose of this program is to create a Monster class
+ * Author: Mike Divine
+ * Date: 11/25/2022
+ */
+
 public abstract class Monster {
   private Integer hp;
   private Integer xp = 10;

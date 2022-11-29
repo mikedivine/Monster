@@ -3,6 +3,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Title: Driver
+ * Abstract: Purpose of this program is to create a Driver class which uses the Monster, Imp, and Kobold objects
+ * Author: Mike Divine
+ * Date: 11/25/2022
+ */
+
 public class Driver {
   public static void main(String[] args) {
     HashMap<String,Integer> items = new HashMap<>();
