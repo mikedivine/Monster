@@ -1,6 +1,6 @@
 /**
  * Title: Attack
- * Abstract: Purpose of this interface is to
+ * Abstract: Purpose of this interface is to extend Ability for attacking
  * Author: Mike Divine
  * Date: 11/15/2022
  */
